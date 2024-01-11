@@ -1,0 +1,9 @@
+export const SERVER = import.meta.env.VITE_SERVER_URL;
+export const API_URL = `${SERVER}/api`;
+export const PRODUCT_URL = `${API_URL}/product`;
+export const UPLOAD_URL = `${API_URL}/upload`;
+export const ORDER_URL = `${API_URL}/order`;
+export const USER_URL = `${API_URL}/user`;
+export const CATEGORY_URL = `${API_URL}/category`;
+export const REVIEW_URL = `${API_URL}/review`;
+export const PAYPAL_URL = `${API_URL}/config/paypal`;
