@@ -146,7 +146,7 @@ export const updateOrderToPaidById = asyncHandler(async (req, res) => {
         throw new customError("Order Not Found", 404);
     }
     
-    const paidCorrectAmount = order.totalPrice.toString() === value;
+    const paidCorrectAmount = order.totalPrice === parseInt(value);
     if (!paidCorrectAmount) throw new Error('Incorrect amount paid');
 
     order.isPaid = true;
